@@ -1,22 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Import Navbar
+import Home from './pages/Home'; // Import Home page
+import About from './pages/About'; // Import About page
+import Dashboard from './pages/Dashboard'; // Import Dashboard page
+import Feedback from './pages/Feedback'; // Import Feedback page
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Job Hunt Buddy AI</h1>
-      <div className="main-text">
-        <h1>LET'S GET YOUR DREAM JOB</h1>
-        <p>Your AI Buddy is here to guide, support, and empower you every step of the way.</p>
+    <Router>
+      <Navbar />
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* Use Home component */}
+          <Route path="/about" element={<About />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/feedback" element={<Feedback />} />
+        </Routes>
       </div>
-      
-      <button>GET STARTED</button>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
