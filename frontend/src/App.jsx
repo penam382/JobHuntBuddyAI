@@ -9,6 +9,7 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <div className="top-bar"></div> {/* Add the top bar */}
       <Navbar />
       <div className="main-content">
         <Routes>
