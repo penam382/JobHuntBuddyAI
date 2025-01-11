@@ -8,7 +8,7 @@ function Home() {
         <h1>LET'S GET YOUR <span className="highlight">DREAM</span> JOB.</h1>
             <p>Your AI Buddy is here to guide, support, and empower you every step of the way.</p>
         </div>
-        <button>GET STARTED</button>
+        <button class="button-19">GET STARTED</button>
         </>
     );
 }
