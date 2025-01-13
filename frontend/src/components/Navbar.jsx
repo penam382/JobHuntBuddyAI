@@ -31,6 +31,11 @@ function Navbar() {
           </Link>
         </li>
         <li>
+          <Link to="/buddyAI" className={location.pathname === '/buddyAI' ? 'active' : ''}>
+            {wrapFirstLetter("BuddyAI")}
+          </Link>
+        </li>
+        <li>
           <Link to="/feedback" className={location.pathname === '/feedback' ? 'active' : ''}>
             {wrapFirstLetter("Feedback")}
           </Link>
