@@ -1,12 +1,12 @@
-h1 {
-  font-family: 'Luckiest Guy', sans-serif;
-}
-
 .navbar {
   padding: 1rem;
+  display: flex;
+  justify-content: flex-end; /* Push all items to the right */
+  align-items: center; /* Vertically center the items */
+  position: relative;
 }
 
-.navbar ul {
+.navbar-list {
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -14,7 +14,7 @@ h1 {
 }
 
 .navbar li {
-  margin-right: 1rem;
+  margin-left: 1rem; /* Add space between each item */
 }
 
 .navbar a {
@@ -22,8 +22,15 @@ h1 {
   color: black;
 }
 
-/* Explicitly style the first letter span in active links */
-.navbar a.active .first-letter {
-  border-bottom: 2px solid black;
-  padding-bottom: 2px;
+/* Profile Circle Styling */
+.profile {
+  margin-left: 1rem; /* Add space between profile icon and other navbar items */
+}
+
+.profile-img {
+  width: 40px;  /* Adjust the size as needed */
+  height: 40px; /* Make sure it's a square */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the circle */
+  border: 2px solid white; /* Optional: Add border to make it stand out */
 }

@@ -10,5 +10,8 @@ h1 {
   height: 0.5cm; /* Adjust the height as needed */
   background-color: #6DA6DE; /* Replace with your desired color */
   width: 100%;
-
+  position: fixed; /* Fix the bar to the top */
+  top: 0; /* Align the bar to the very top of the page */
+  left: 0; /* Align the bar to the very left of the page */
+  z-index: 1000; /* Ensure it appears on top of other elements */
 }

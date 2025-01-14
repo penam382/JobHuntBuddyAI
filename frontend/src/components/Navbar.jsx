@@ -4,7 +4,6 @@ import './Navbar.css';
 function Navbar() {
   const location = useLocation(); // Get the current route
 
-  // A helper function to wrap the first letter
   const wrapFirstLetter = (text) => (
     <>
       <span className="first-letter">{text[0]}</span>
@@ -14,7 +13,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <ul>
+      <ul className="navbar-list">
         <li>
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
             {wrapFirstLetter("Home")}
@@ -41,8 +40,15 @@ function Navbar() {
           </Link>
         </li>
         <li>
-        
-          <h1>Job Hunt Buddy AI</h1>
+          <Link to="/" className="job-hunt-link">
+            Job Hunt Buddy AI
+          </Link>
+        </li>
+        {/* Profile Circle Icon */}
+        <li className="profile">
+          <Link to="/profile">
+            <img src="path_to_profile_picture.jpg" alt="Profile" className="profile-img" />
+          </Link>
         </li>
       </ul>
     </nav>
