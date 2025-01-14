@@ -1,8 +1,43 @@
 /* Home.css */
 
-h1 {
-    font-family: 'Luckiest Guy', sans-serif;
+.dream-job {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 5.93rem;
+
+  /* Frame-related styles */
+  width: 570px; /* Set the maximum width */
+  height: 300px; /* Set the maximum height */
+  overflow: hidden; /* Hide anything that overflows the frame */
+  text-align: left; /* Center text horizontally */
+  white-space: wrap; /* Prevent text from wrapping to the next line */
+  /* border: 2px solid black; */
+  padding-top: 3px;
+  padding-left: 3px;
+  letter-spacing: 2px;
+  
+  
 }
+
+.p-home {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+
+  /* Frame-related styles */
+  width: 450px; /* Set the maximum width */
+  height: 200px; /* Set the maximum height */
+  overflow: hidden; /* Hide anything that overflows the frame */
+  text-align: left; /* Center text horizontally */
+  white-space: wrap; 
+
+  /* border: 2px solid black;  */
+
+  margin-top: -80px
+}
+
+.main-text {
+  padding-left: 4rem;
+}
+
 
 .highlight {
     color: #6DA6DE; 
@@ -15,7 +50,7 @@ h1 {
   appearance: button;
   background-color: black;
   border: solid transparent;
-  border-radius: 16px;
+  border-radius: 12px;
   border-width: 0 0 4px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -40,6 +75,7 @@ h1 {
   vertical-align: middle;
   white-space: nowrap;
   width: 20%;
+  margin-top: -100px
 }
 
 .button-19:after {

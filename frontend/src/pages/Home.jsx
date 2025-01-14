@@ -3,12 +3,12 @@ import './Home.css'
 function Home() {
     return (
         <>
-        <h1>Job Hunt Buddy AI</h1>
         <div className="main-text">
-        <h1>LET'S GET YOUR <span className="highlight">DREAM</span> JOB.</h1>
-            <p>Your AI Buddy is here to guide, support, and empower you every step of the way.</p>
+            <h1 className='dream-job'>Let's get your <span className="highlight">dream</span> job.</h1>
+                <p className='p-home'>Your AI Buddy is here to guide, support, and empower you every step of the way.</p>
+                <button class="button-19">GET STARTED</button>
         </div>
-        <button class="button-19">GET STARTED</button>
+        
         </>
     );
 }

@@ -40,6 +40,10 @@ function Navbar() {
             {wrapFirstLetter("Feedback")}
           </Link>
         </li>
+        <li>
+        
+          <h1>Job Hunt Buddy AI</h1>
+        </li>
       </ul>
     </nav>
   );

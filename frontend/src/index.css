@@ -1,10 +1,14 @@
 
 
 
+h1 {
+  font-family: 'Luckiest Guy', sans-serif;
+}
 
 /* Add this new section */
 .top-bar {
   height: 0.5cm; /* Adjust the height as needed */
   background-color: #6DA6DE; /* Replace with your desired color */
   width: 100%;
+
 }
