@@ -5,9 +5,11 @@ h1 {
   font-family: 'Luckiest Guy', sans-serif;
 }
 
+/* daily commit - no time to code today */
+
 /* Add this new section */
 .top-bar {
-  height: 0.5cm; /* Adjust the height as needed */
+  height: 0.45cm; /* Adjust the height as needed */
   background-color: #6DA6DE; /* Replace with your desired color */
   width: 100%;
   position: fixed; /* Fix the bar to the top */
