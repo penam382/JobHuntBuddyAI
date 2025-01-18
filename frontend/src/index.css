@@ -16,4 +16,5 @@ h1 {
   top: 0; /* Align the bar to the very top of the page */
   left: 0; /* Align the bar to the very left of the page */
   z-index: 1000; /* Ensure it appears on top of other elements */
+  
 }

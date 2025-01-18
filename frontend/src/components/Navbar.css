@@ -34,3 +34,8 @@
   object-fit: cover; /* Ensures the image covers the circle */
   border: 2px solid white; /* Optional: Add border to make it stand out */
 }
+
+.job-hunt-link {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 1.2rem;
+}
