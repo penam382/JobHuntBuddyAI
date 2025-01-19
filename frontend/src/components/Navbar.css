@@ -38,4 +38,9 @@
 .job-hunt-link {
   font-family: 'Luckiest Guy', sans-serif;
   font-size: 1.2rem;
+
+  /* linear gradient */
+  background: linear-gradient(90deg, #6DA6DE, #3B5A78); /* Corrected gradient syntax */
+  -webkit-background-clip: text; /* Ensures gradient applies to text */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent, revealing gradient */
 }
