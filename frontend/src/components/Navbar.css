@@ -1,4 +1,7 @@
 .navbar {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+
   padding: 1rem;
   display: flex;
   justify-content: flex-end; /* Push all items to the right */
@@ -7,11 +10,35 @@
 }
 
 .navbar-list {
+  
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 2.5rem;
+  
 }
+
+.navbar-list li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1rem;
+  font-weight: normal;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-list li a.active {
+  color: black;
+}
+
+.navbar-list li a.active .first-letter {
+  text-decoration: underline;
+  text-decoration-color: #6DA6DE;
+  text-underline-offset: 4px;
+}
+
+
+
 
 .navbar li {
   margin-left: 1rem; /* Add space between each item */
