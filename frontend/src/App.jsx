@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard'; // Import Dashboard page
 import BuddyAI from './pages/BuddyAI';
 import Feedback from './pages/Feedback'; // Import Feedback page
 import './App.css';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/BuddyAI" element={<BuddyAI />} />
           <Route path="/feedback" element={<Feedback />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </Router>
