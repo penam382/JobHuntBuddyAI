@@ -1,8 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import { useState } from 'react';
 
 function Navbar() {
   const location = useLocation(); // Get the current route
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // Simulated auth state
 
   const wrapFirstLetter = (text) => (
     <>
@@ -44,12 +46,20 @@ function Navbar() {
             Job Hunt Buddy AI
           </Link>
         </li>
-        {/* Profile Circle Icon */}
-        <li className="profile">
-          <Link to="/profile">
-            <img src="path_to_profile_picture.jpg" alt="Profile" className="profile-img" />
-          </Link>
-        </li>
+        {/* Show Login button if the user is not authenticated */}
+        {!isAuthenticated && (
+          <li className="auth-buttons">
+            <Link to="/login" className="login-button">Login</Link>
+          </li>
+        )}
+        {/* Profile Circle Icon - Only show when authenticated */}
+        {isAuthenticated && (
+          <li className="profile">
+            <Link to="/profile">
+              <img src="path_to_profile_picture.jpg" alt="Profile" className="profile-img" />
+            </Link>
+          </li>
+        )}
       </ul>
     </nav>
   );
