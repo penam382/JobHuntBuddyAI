@@ -11,7 +11,10 @@ Question: {question}
 Answer: 
 """
 
+# use ollama model
 model = OllamaLLM(model="llama3")
+
+# chatprompttemplate is used to create flexible templated prompts for chat models.
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
 
